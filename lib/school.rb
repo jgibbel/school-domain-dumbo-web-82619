@@ -22,8 +22,9 @@ class School
   def sort
     sorted=@roster.sort_by { |key| key }
     sorted.each do |both|
-      both[1]
+      both[1] = both[1].sort
     end
+    sorted
   end
 
 end 
