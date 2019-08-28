@@ -20,10 +20,8 @@ class School
   end 
 
   def sort
-    sorted=@roster.sort_by { |key| key }.to_h
-    sorteder=sorted.each do |k,v| 
-      v.sort_by {|x| x}
-    end
+    sorted=@roster.sort_by { |key| key }
+    sorteder=sorted.each 
     sorteder
   end
 
