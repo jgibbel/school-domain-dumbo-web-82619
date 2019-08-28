@@ -21,7 +21,9 @@ class School
 
   def sort
     sorted=@roster.sort_by { |key| key }
-    sorted 
+    sorteder = sorted.each do |both|
+      both[1].sort_by {|x| x}
+    end
   end
 
 end 
