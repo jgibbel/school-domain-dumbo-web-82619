@@ -24,7 +24,7 @@ class School
     sorted.each do |both|
       both[1] = both[1].sort
     end
-    sorted
+    sorted.to_h
   end
 
 end 
